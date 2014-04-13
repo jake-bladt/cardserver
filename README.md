@@ -2,6 +2,7 @@
 A small web server written in C for managing and dealing cards RESTfully.
 
 The API contract is:
+
   getdeck/{num} - return the ID of a new "deck" of cards consisting of {num} standard 52-card decks. Defaults to 1 deck. Maximum of 10 decks. Return in the following format:
 
   ```javascript
@@ -23,3 +24,5 @@ The API contract is:
 Failure codes:
 * 404 - a deck that was requested wasn't found.
 * 408 - the number of decks or cards requested was invalid.
+
+
